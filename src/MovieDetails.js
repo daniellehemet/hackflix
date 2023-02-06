@@ -23,7 +23,7 @@ const MovieDetails = () => {
       // set details to state
       setMovie(res.data);
     })
-  }, []);
+  }, [movieID]);
 
   // destructuring - AKA "create these variables from movie.original_title, movie.tagline, movie.overview..."
   const {original_title, tagline, overview} = movie;
